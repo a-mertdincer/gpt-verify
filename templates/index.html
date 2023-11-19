@@ -1,0 +1,40 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dockerfile Kontrol Paneli</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="dockerfile-instructions">
+                <h2>Talimatlar</h2>
+                <ul>
+                    <li>Temel bir Ubuntu imajı kullanın.</li>
+                    <li>Sistem paketlerini güncelleyin.</li>
+                    <li>Python ve pip'i yükleyin.</li>
+                    <li>Uygulama kodunu ekleyin.</li>
+                    <li>Çalışma dizinini ayarlayın.</li>
+                    <li>Uygulama bağımlılıklarını yükleyin.</li>
+                    <li>Uygulamayı başlatın.</li>
+                </ul>
+            </div>
+            <div class="dockerfile-input">
+                <h3 id="dockerfileHeader">Dockerfile İçeriği</h3>
+                <textarea id="dockerfileContent" rows="10" placeholder="Dockerfile içeriğinizi buraya yapıştırın..."></textarea>
+                <button onclick="checkDockerfile()">Kontrol Et</button>
+                <div id="output" class="output"></div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h2>Terminal</h2>
+            <iframe id="terminalFrame" src="https://ip10-244-155-127-user2872-3030.bulutbilisimciler.com/" frameborder="0"></iframe>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

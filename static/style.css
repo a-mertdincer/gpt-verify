@@ -1,0 +1,93 @@
+/* static/style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.left-panel,
+.right-panel {
+    flex: 1;
+    padding: 20px;
+}
+
+.dockerfile-instructions {
+    margin-bottom: 20px;
+}
+
+.dockerfile-instructions h2 {
+    color: #333;
+}
+
+.dockerfile-instructions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dockerfile-instructions li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.dockerfile-input {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#dockerfileContent {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#dockerfileHeader {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#output {
+    margin-top: 10px;
+    color: #333;
+}
+
+#terminalFrame {
+    width: 100%;
+    height: 100vh;
+    border: none;
+    border-top: 1px solid #ddd;
+}

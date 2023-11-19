@@ -1,0 +1,13 @@
+Temel bir Ubuntu imajı kullanın.
+
+Sistem paketlerini güncelleyin.
+
+Python ve pip'i yükleyin.
+
+Uygulama kodunu ekleyin.
+
+Çalışma dizinini ayarlayın
+
+Uygulama bağımlılıklarını yükleyin
+
+Uygulamayı başlatın
